@@ -1,7 +1,7 @@
-from odoo import api, fields, models
+from odoo import fields, models
 
 class OwlTodo(models.Model):
-    _name = 'todo_owl.list'
+    _name = 'todo.list'
     _description = 'Owl todolist app'
 
     name = fields.Char(string="Task Name")
