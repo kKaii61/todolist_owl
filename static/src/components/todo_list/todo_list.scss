@@ -1,0 +1,137 @@
+/*-----------------------------------*\
+  #CUSTOM PROPERTIIES
+\*-----------------------------------*/
+
+:root {
+    --grey-2: hsla(0, 0%, 0%, 0.075);
+}
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img,
+ion-icon,
+a,
+button,
+time,
+span {
+  display: block;
+}
+
+button {
+  font: inherit;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  background: none;
+  font: inherit;
+}
+
+::selection {
+  background: var(--dark-purple);
+  color: var(--misty-rose);
+}
+
+:focus {
+  outline-color: var(--dark-purple);
+}
+
+html {
+  font-family: var(--ff-poppins);
+  font-size: var(--fs-2); /* 18px */
+}
+
+body {
+  width: 100%;
+  font-size: 0.875rem;
+  background-color: var(--bg-main);
+}
+/*-----------------------------------*\
+#REUSED STYLES
+\*-----------------------------------*/
+  .btn-secondary {
+    border-radius: none;
+  }
+  .btn-secondary-mode-left {
+    padding: 4px 10px;
+    background-color: var(--grey-2);
+    border-top-left-radius: 0.2em;
+    border-bottom-left-radius: 0.2em;
+  }
+  .btn-secondary-mode-center {
+    padding: 4px 10px;
+    background-color: var(--grey-2);
+    border-radius: none !important;
+  }
+  .btn-secondary-mode-right {
+    padding: 4px 10px;
+    background-color: var(--grey-2);
+    border-top-right-radius: 0.2em;
+    border-bottom-right-radius: 0.2em;
+  }
+/*-----------------------------------*\
+#HEADER
+\*-----------------------------------*/
+
+ //////////// TOOLBAR //////////////
+ .toolbar__container .toolbar__searchbar {
+    font-size: 0.8em;
+    width: 30%;
+    min-width: 230px;
+    border: 1px solid var(--grey2);
+    border-radius: 0.2em;
+  }
+  .toolbar__container .toolbar__searchbar button {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  .toolbar__container .toolbar__searchbar-actions {
+    width: 100%;
+  }
+  .toolbar__container .toolbar__searchbar .searchbar__input {
+    flex-grow: 1;
+  }
+  .toolbar__container .toolbar__searchbar input {
+    display: block;
+    text-overflow: ellipsis;
+    width: auto !important;
+    flex-grow: 1 !important;
+    border: none;
+    outline: none;
+  }
+  .toolbar__container .toolbar__searchbar input:focus,
+  .toolbar__container .toolbar__searchbar input:focus-visible {
+    border: none;
+  }
+  .toolbar__container .toolbar__actions:last-child .btn {
+    margin-right: 6px;
+  }
+  .toolbar__container .toolbar__actions:last-child .btn:last-child {
+    margin-right: 24px;
+  }
+  .toolbar__container .toolbar__actions button {
+    margin: 0;
+  }
